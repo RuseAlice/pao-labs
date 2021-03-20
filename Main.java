@@ -1,24 +1,49 @@
 package com.company;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	    Person p1 = new Person("Elena", "Marin",37, 34567 ,"profesor");
-	    Person p2 = new Person("Mihai", "Popescu",50, 18907 ,"asistent");
-        System.out.println(p1.getName()+" "+p1.getSurname()+" "+p1.getAge()+" "+p1.getIdentity()+" "+p1.getType());
-        System.out.println(p2.getName()+" "+p2.getSurname()+" "+p2.getAge()+" "+p2.getIdentity()+" "+p2.getType());
+//	System.out.println("Hello world");
+//	Integer i1 = Integer.valueOf(2);
+//	double i1Double = i1;
+//	int i1Int = i1.intValue();
+//	String intAsString = i1.toString();
+//
+//	System.out.println(i1);
+//	System.out.println(i1Double);
+//	System.out.println(i1Int);
+//	System.out.println(intAsString);
+//	String a="Hello world";
+//	System.out.println(a.toLowerCase());
+//	System.out.println(a.toUpperCase());
+//	System.out.println(a.equals("Test"));
+//	System.out.println(a.charAt(2));
 
-        Room r1 = new Room(207, "laboratory", 1);
-        Room r2 = new Room(389, "class", 2);
-        System.out.println(r1.getRoomNumber()+" "+r1.getType()+" "+r1.getFloor());
-        System.out.println(r2.getRoomNumber()+" "+r2.getType()+" "+r2.getFloor());
 
-        Subject s1 = new Subject(r1, 27, p1);
-        Subject s2 = new Subject(r2, 49, p2);
-        System.out.println(s1.getRoom().getRoomNumber()+" "+s1.getNoOfStudents()+" "+s1.getTeacher().getSurname());
-        System.out.println(s2.getRoom().getRoomNumber()+" "+s2.getNoOfStudents()+" "+s2.getTeacher().getSurname());
+//ex1
+ Scanner in= new Scanner(System.in);
+ int n = in.nextInt();
+for (int i=1;i<=n;i++){
+	if(i%2==0)
+		System.out.println(i);
+}
 
-        System.out.println(Dean.getDean().getName());
+//ex2
+//Scanner in= new Scanner(System.in);
+int a = in.nextInt();
+int b = in.nextInt();
+if(a>b)
+{System.out.println(a);}
+else {
+	System.out.println(b);
+}
+
+//ex3
+
+
 
     }
 }
